@@ -66,7 +66,7 @@ function addUser(body: any) {
   accounts.forEach(async (account: any) => {
     await sleep(1000);
     if (account) {
-      api.management.accountUserLinks
+      await api.management.accountUserLinks
         .insert({
           accountId: account.value,
           requestBody: {
@@ -152,7 +152,7 @@ function deleteUser(body: any) {
       if (linkId === "false") {
         return;
       }
-      api.management.accountUserLinks
+      await api.management.accountUserLinks
         .delete({
           accountId: account.value,
           linkId
