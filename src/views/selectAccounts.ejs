@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Filter App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form action="/analytics/do" method="post">
+      <% data.forEach(item => { %> <%- item %> <% }) %>
+      <input type="hidden" name="email" value=<%= email %>>
+      <button type="submit" name="method" value="add">Add</button>
+      <button type="submit" name="method" value="delete">Delete</button>
+    </form>
+  </body>
+</html>

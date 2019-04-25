@@ -2,6 +2,7 @@ This program has two things it can do with Google Analytics
 
 1. Add/Delete analytic users by email from account level based on what accounts you already have manager access to.
 2. Add/Delete view filters for websites
+* Note all output will be on console
 
 
 How To Use
@@ -22,4 +23,4 @@ How To Use
     1. Insert wanted email to either remove or add. Press button
     2. Select which account you want to add the email to. Press either button
   * Analytics
-    1. Insert cooresponding fields to form 
+    1. Insert cooresponding fields to form. Hit either button. DONE.
